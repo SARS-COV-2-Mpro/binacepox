@@ -1,0 +1,17 @@
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/fapi/*"
+  to = "/.netlify/functions/proxy"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/proxy"
+  status = 200
+
+[[redirects]]
+  from = "/futures/*"
+  to = "/.netlify/functions/proxy"
+  status = 200
